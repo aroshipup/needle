@@ -1,4 +1,4 @@
-// swift-tools-version:5.6
+// swift-tools-version:5.4
 import PackageDescription
 
 let package = Package(
@@ -10,8 +10,8 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/apple/swift-tools-support-core", .upToNextMajor(from: "0.1.5")),
         .package(url: "https://github.com/uber/swift-concurrency.git", .upToNextMajor(from: "0.6.5")),
-        .package(url: "https://github.com/uber/swift-common.git", exact: "0.5.0"),
-        .package(url: "https://github.com/apple/swift-syntax.git", exact: "0.50600.1"),
+        .package(url: "https://github.com/uber/swift-common.git", .exact("0.5.0")),
+        .package(url: "https://github.com/apple/swift-syntax.git", .exact( "0.50600.1")),
     ],
     targets: [
         .target(
