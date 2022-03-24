@@ -18,6 +18,9 @@ import Concurrency
 import Foundation
 import SourceParsingFramework
 import SwiftSyntax
+#if canImport(SwiftSyntaxParser)
+import SwiftSyntaxParser
+#endif
 
 /// A task that parses a Swift source content and produces Swift AST that
 /// can then be parsed into the dependnecy graph.
